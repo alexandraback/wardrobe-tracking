@@ -3,11 +3,7 @@ import './App.css';
 import AddItem from './components/addItem/addItem';
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {selectedClothingType:"", selectedOwner:"Olena"};
-  }
-  render() {
+   render() {
     return (
       <div className="App">
     <AddItem/>
