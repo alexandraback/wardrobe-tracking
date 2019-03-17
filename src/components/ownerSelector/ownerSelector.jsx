@@ -8,14 +8,14 @@ export function OwnerSelector({onChange}){
      return (
        <>
          {owners.map((owner,i)=>{ return(
-             <React.Fragment key={`${owners}${i}`}>
+             <>
                <input type="radio" name="Owner" onChange={onChange} value={owner} key={owner}/>
-               {owner}
-               <Input
-          placeholder="What needs to be done?"
-        />
-             </React.Fragment>
+               {owner}             
+             </>
      )})}
+       <Input
+          placeholder="new wardrobe"
+        />
      </>
    )
 }
